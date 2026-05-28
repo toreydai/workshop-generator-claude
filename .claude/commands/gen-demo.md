@@ -267,6 +267,18 @@ ls docs/demo*.md 2>/dev/null
    ```
 3. **使用方式**：说明在此目录打开 Claude Code，粘贴 Demo 内容执行，每个 Demo 末尾有清理步骤
 4. **环境要求**：列出所需工具及版本（AWS CLI、服务专属 CLI 等）
+5. **License**：在 README 末尾添加 License 章节：
+   ```markdown
+   ## License
+
+   This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+   ```
+6. **免责声明**：在 License 章节后添加：
+   ```markdown
+   ## Disclaimer
+
+   本 Workshop 仅供学习和测试用途。执行过程中会创建 AWS 资源并产生费用，请在实验完成后及时清理资源。作者不对因使用本 Workshop 产生的任何费用或损失承担责任。所有命令和配置仅作为示例参考，生产环境使用前请根据实际需求进行安全评估和调整。
+   ```
 
 ### Step 5：生成执行记录模板
 

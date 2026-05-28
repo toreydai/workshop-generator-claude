@@ -2,7 +2,7 @@
 
 用 Claude Code 把 AWS Workshop 当代码来管理和执行。
 
-三个 skill 覆盖 Workshop 全生命周期：**生成文档 → 自动执行 → 记录结果**。生成的 Demo 文档一份两用——人工可以跟着操作，AI 也可以直接执行。
+三个 skill 覆盖 Workshop 全生命周期：**生成文档 → 自动执行 → 记录结果**。生成的 Demo 文档一份两用——人工可以跟着操作，AI 也可以直接执行。适用于所有 AWS 服务的动手实验场景。
 
 > kiro-cli 版本请见 [workshop-generator-kiro](https://github.com/<your-org>/workshop-generator-kiro)。
 
@@ -10,8 +10,8 @@
 
 | Skill | 作用 |
 |-------|------|
-| `/gen-demo` | 为指定 AWS 服务生成完整 Workshop 内容（CLAUDE.md、Demo 文档、README、执行记录模板） |
-| `/run-demo` | 执行单个 Demo，自动修正文档错误，同步元数据文件 |
+| `/gen-demo` | 为指定 AWS 服务生成 Workshop 内容（CLAUDE.md、Demo 文档、README、执行记录模板） |
+| `/run-demo` | 执行单个 Demo，自动修正文档，同步元数据 |
 | `/run-all` | 串行执行所有 Demo，输出汇总报告 |
 
 ## 快速开始
@@ -114,4 +114,8 @@ cp -r .claude your-workshop/
 
 ## License
 
-MIT
+MIT - see the [LICENSE](LICENSE) file for details.
+
+## 免责声明
+
+本项目仅供学习和测试用途。生成的 Workshop 内容在执行过程中会创建 AWS 资源并产生费用，请在实验完成后及时清理资源。作者不对因使用本项目产生的任何费用或损失承担责任。所有命令和配置仅作为示例参考，生产环境使用前请根据实际需求进行安全评估和调整。
